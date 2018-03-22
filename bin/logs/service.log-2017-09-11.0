@@ -1,0 +1,1154 @@
+2017-09-11 09:24:52,588 INF                  -                             ApiServerMain$            Process started
+2017-09-11 09:24:56,098 INF                  -                             HikariDataSource          slick.db - Started.
+2017-09-11 09:24:59,140 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-09-11 09:24:59,156 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-09-11 09:24:59,156 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-09-11 09:24:59,624 INF                  -                             ApiServerMain$            Warming up.
+2017-09-11 09:24:59,717 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 09:24:59,717 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 09:24:59,811 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-09-11 09:24:59,826 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-09-11 09:24:59,826 INF                  -                             ApiServerMain$            api-service started.
+2017-09-11 09:24:59,826 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-09-11 09:28:03,260 INF                  -                             ApiServerMain$            Process started
+2017-09-11 09:28:04,540 INF                  -                             HikariDataSource          slick.db - Started.
+2017-09-11 09:28:06,412 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-09-11 09:28:06,412 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-09-11 09:28:06,412 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-09-11 09:28:06,724 INF                  -                             ApiServerMain$            Warming up.
+2017-09-11 09:28:06,833 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 09:28:06,833 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 09:28:06,911 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-09-11 09:28:06,911 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-09-11 09:28:06,911 INF                  -                             ApiServerMain$            api-service started.
+2017-09-11 09:28:06,911 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-09-11 09:42:07,880 INF 6d627bf44838ee0d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:01:42:07 +0000] "POST /api/auth/token HTTP/1.1" 200 239 2014 "-"
+2017-09-11 09:56:43,385 ERR f190297c9829cb5d -                             FinatraDefaultExceptionMapper Unhandled Exception
+java.sql.SQLTransientConnectionException: slick.db - Connection is not available, request timed out after 1012ms.
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:196) ~[HikariCP-2.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:147) ~[HikariCP-2.4.5.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:83) ~[HikariCP-2.4.5.jar:na]
+	at slick.jdbc.hikaricp.HikariCPJdbcDataSource.createConnection(HikariCPJdbcDataSource.scala:12) ~[slick-hikaricp_2.11-3.1.1.jar:na]
+	at slick.jdbc.JdbcBackend$BaseSession.conn$lzycompute(JdbcBackend.scala:415) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.JdbcBackend$BaseSession.conn(JdbcBackend.scala:414) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.JdbcBackend$SessionDef$class.prepareStatement(JdbcBackend.scala:297) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.JdbcBackend$BaseSession.prepareStatement(JdbcBackend.scala:407) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.StatementInvoker.results(StatementInvoker.scala:33) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.StatementInvoker.iteratorTo(StatementInvoker.scala:22) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.Invoker$class.foreach(Invoker.scala:48) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.StatementInvoker.foreach(StatementInvoker.scala:16) ~[slick_2.11-3.1.1.jar:na]
+	at slick.jdbc.StreamingInvokerAction$class.run(StreamingInvokerAction.scala:22) ~[slick_2.11-3.1.1.jar:na]
+	at slick.driver.JdbcActionComponent$QueryActionExtensionMethodsImpl$$anon$1.run(JdbcActionComponent.scala:218) ~[slick_2.11-3.1.1.jar:na]
+	at slick.driver.JdbcActionComponent$QueryActionExtensionMethodsImpl$$anon$1.run(JdbcActionComponent.scala:218) ~[slick_2.11-3.1.1.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$$anon$2.liftedTree1$1(DatabaseComponent.scala:237) ~[slick_2.11-3.1.1.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$$anon$2.run(DatabaseComponent.scala:237) ~[slick_2.11-3.1.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+2017-09-11 09:56:43,385 WAR f190297c9829cb5d -                             ResponseBuilder           Request Failure: Internal/Unhandled/java.sql.SQLTransientConnectionException 
+2017-09-11 09:56:43,510 INF f190297c9829cb5d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:01:56:43 +0000] "POST /api/auth/token HTTP/1.1" 500 36 1182 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 09:57:20,294 ERR 15b762d4895b93b5 -                             FinatraDefaultExceptionMapper Unhandled Exception
+com.twitter.finagle.UnknownChannelException: 远程主机强迫关闭了一个现有的连接。 at remote address: /192.168.0.197:6379 from service: 192.168.0.197:6379. Remote Info: Upstream Address: /127.0.0.1:49889, Upstream Client Id: Not Available, Downstream Address: /192.168.0.197:6379, Downstream Client Id: 192.168.0.197:6379, Trace Id: 15b762d4895b93b5.493b17a026000b9d<:ab63fa569afd103f
+	at com.twitter.finagle.ChannelException$.apply(Exceptions.scala:239) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at com.twitter.finagle.netty3.transport.ChannelTransport.handleUpstream(ChannelTransport.scala:84) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.exceptionCaught(FrameDecoder.java:377) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:112) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.exceptionCaught(SimpleChannelHandler.java:156) [netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelStatsHandler.exceptionCaught(ChannelStatsHandler.scala:103) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:130) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.exceptionCaught(SimpleChannelHandler.java:156) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:130) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireExceptionCaught(Channels.java:525) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:74) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	... 10 common frames omitted
+2017-09-11 09:57:20,294 WAR 15b762d4895b93b5 -                             ResponseBuilder           Request Failure: Internal/Unhandled/com.twitter.finagle.UnknownChannelException/java.io.IOException 
+2017-09-11 09:57:20,294 INF 15b762d4895b93b5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:01:57:20 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 500 36 21628 "-"
+2017-09-11 10:13:49,399 INF 5ae5ed9c0ef3ab13 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:02:13:49 +0000] "POST /api/auth/token HTTP/1.1" 200 234 477 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 10:13:57,776 INF cf7c382b6b9a5d81 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:02:13:57 +0000] "POST /api/auth/token HTTP/1.1" 200 244 94 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 10:14:15,435 INF a4848fc47cc8380e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:02:14:15 +0000] "POST /api/auth/token HTTP/1.1" 200 239 95 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 10:20:55,217 INF a3b89f83d12186cf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:02:20:55 +0000] "POST /api/auth/token HTTP/1.1" 200 231 91 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 10:27:46,150 INF                  -                             ApiServerMain$            Process started
+2017-09-11 10:27:49,675 INF                  -                             HikariDataSource          slick.db - Started.
+2017-09-11 10:27:52,530 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-09-11 10:27:52,546 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-09-11 10:27:52,546 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-09-11 10:27:52,951 INF                  -                             ApiServerMain$            Warming up.
+2017-09-11 10:27:53,061 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 10:27:53,061 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 10:27:53,154 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-09-11 10:27:53,154 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-09-11 10:27:53,154 INF                  -                             ApiServerMain$            api-service started.
+2017-09-11 10:27:53,154 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-09-11 10:28:58,862 INF dbd61ffaa217dd95 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:02:28:58 +0000] "POST /api/auth/token HTTP/1.1" 200 246 1954 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 10:31:39,448 WAR                  -                             finagle                   Unhandled exception in connection with /127.0.0.1:49594 , shutting down connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-11 10:34:40,421 INF                  -                             ApiServerMain$            Process started
+2017-09-11 10:34:43,588 INF                  -                             HikariDataSource          slick.db - Started.
+2017-09-11 10:34:46,443 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-09-11 10:34:46,458 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-09-11 10:34:46,458 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-09-11 10:34:46,864 INF                  -                             ApiServerMain$            Warming up.
+2017-09-11 10:34:46,958 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 10:34:46,958 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-09-11 10:34:47,051 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-09-11 10:34:47,051 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-09-11 10:34:47,051 INF                  -                             ApiServerMain$            api-service started.
+2017-09-11 10:34:47,051 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-09-11 11:00:11,651 INF 8b0b0872ed2998b7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:00:11 +0000] "POST /api/auth/token HTTP/1.1" 200 214 1918 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 11:00:12,244 INF dcc87d46bb8fa632 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:00:12 +0000] "GET /api/auth/info?_=1505099519940 HTTP/1.1" 200 4292 99 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 11:00:19,498 INF 54b66b80ef624664 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:00:19 +0000] "GET /api/book/reference?keyword=&author=&title=&isbn=&publisher=&clc=&publish_year=&topic=&offset=0&limit=10&hold=false&_=1505099519944 HTTP/1.1" 200 24207 364 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-09-11 11:09:06,108 INF 1c4342b98d07f3b3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:09:06 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 401 40 45 "-"
+2017-09-11 11:18:29,175 INF 1e13a43e7f118876 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:18:29 +0000] "POST /api/auth/token HTTP/1.1" 200 231 166 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:18:29,737 INF 0958e673cc10f087 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:18:29 +0000] "GET /api/auth/info?_=1505100613627 HTTP/1.1" 200 2500 7 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:18:51,218 INF eab168bd65236bbb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:18:51 +0000] "GET /api/data/flow_category?start_time=1504224000000&end_time=1505001600000&_=1505100613632 HTTP/1.1" 200 435 230 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:18:54,385 INF 94830be0cb3c3d31 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:18:54 +0000] "GET /api/data/flow_category?start_time=1504224000000&end_time=1505001600000&_=1505100613633 HTTP/1.1" 200 435 29 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:18:56,990 INF 2b5e2371809de137 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:18:56 +0000] "GET /api/data/flow_category?start_time=1504224000000&end_time=1505001600000&_=1505100613634 HTTP/1.1" 200 435 33 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:19:00,953 INF 39b9f71f42f412db -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:19:00 +0000] "GET /api/data/flow_category?start_time=1504310400000&end_time=1505001600000&_=1505100613635 HTTP/1.1" 200 435 24 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:19:03,542 INF a96d7c6d400c2c23 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:19:03 +0000] "GET /api/data/flow_category?start_time=1504310400000&end_time=1505001600000&_=1505100613636 HTTP/1.1" 200 435 21 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:19:06,537 INF 9ef86d9b1c5cd35b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:19:06 +0000] "GET /api/data/flow_category?start_time=1504310400000&end_time=1505001600000&_=1505100613637 HTTP/1.1" 200 435 14 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:19:33,557 INF 8aa07c8d0b281508 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:19:33 +0000] "GET /api/data/flow_category?start_time=1504310400000&end_time=1505001600000&_=1505100613638 HTTP/1.1" 200 435 27 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:19:41,918 INF 5553291f30bdcd4e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:19:41 +0000] "GET /api/data/ranking_reader?start_time=1504224000000&end_time=1505001600000&_=1505100613643 HTTP/1.1" 200 267 24 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+2017-09-11 11:48:14,068 INF 5f06958847cb506c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:48:14 +0000] "POST /api/auth/token HTTP/1.1" 200 236 109 "-"
+2017-09-11 11:48:27,515 INF 67a45696786e9bdc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:48:27 +0000] "POST /api/auth/token HTTP/1.1" 200 222 94 "-"
+2017-09-11 11:48:39,496 INF a68f9d1f12058574 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:48:39 +0000] "POST /api/auth/token HTTP/1.1" 200 231 89 "-"
+2017-09-11 11:49:51,459 INF e1d28ddba1c1666c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:49:51 +0000] "POST /api/auth/token HTTP/1.1" 200 239 88 "-"
+2017-09-11 11:51:02,548 INF eebbafb3c5702656 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:02 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 100 "-"
+2017-09-11 11:51:02,735 INF 37ed7a4013d6814b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:02 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 54 "-"
+2017-09-11 11:51:02,782 INF 44f9c88b47abfd66 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:02 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2414 22 "-"
+2017-09-11 11:51:28,164 INF 40fb3418b65c4376 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:28 +0000] "GET /api/book/items?barcode=00001055 HTTP/1.1" 200 410 71 "-"
+2017-09-11 11:51:28,429 INF 543a9c29ddb8ceee -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:28 +0000] "POST /api/book/return HTTP/1.1" 200 125 249 "-"
+2017-09-11 11:51:28,444 INF e10f5d3f67012920 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:28 +0000] "GET /api/book/items?barcode=00001068 HTTP/1.1" 200 408 7 "-"
+2017-09-11 11:51:28,538 INF aa0cfcdcc15723aa -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:51:28 +0000] "POST /api/book/return HTTP/1.1" 200 125 86 "-"
+2017-09-11 11:52:18,271 INF ef794d907d17c630 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:52:18 +0000] "GET /api/book/items?barcode=00001062 HTTP/1.1" 200 406 13 "-"
+2017-09-11 11:52:18,349 INF 48324f31e3e8e34b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:52:18 +0000] "POST /api/book/return HTTP/1.1" 200 125 79 "-"
+2017-09-11 11:52:18,364 INF 7edb4f6d21d688c0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:52:18 +0000] "GET /api/book/items?barcode=00001092 HTTP/1.1" 200 408 7 "-"
+2017-09-11 11:52:18,458 INF f39d0e7d61dabef4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:52:18 +0000] "POST /api/book/return HTTP/1.1" 200 125 85 "-"
+2017-09-11 11:53:01,109 INF d53cec39e6dd4b9f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:01 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 7 "-"
+2017-09-11 11:53:01,124 INF 1e0b6154c0e06bc0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:01 +0000] "GET /api/book/items?barcode=00001055 HTTP/1.1" 200 409 11 "-"
+2017-09-11 11:53:01,265 INF 526a48e0cfeab8d0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:01 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 125 132 "-"
+2017-09-11 11:53:02,497 INF fbafbe15528dad3a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:02 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 1234 14 "-"
+2017-09-11 11:53:02,513 INF 3b32924ff7eb7c09 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:02 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 7 "-"
+2017-09-11 11:53:02,528 INF 52999f5bfc162fe3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:02 +0000] "GET /api/book/items?barcode=00001068 HTTP/1.1" 200 407 6 "-"
+2017-09-11 11:53:02,591 INF e05779f614cd4535 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:02 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 125 72 "-"
+2017-09-11 11:53:03,823 INF d5d0488e333e33af -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:03 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 1628 19 "-"
+2017-09-11 11:53:15,289 INF e03fc24a60bf9af2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:15 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 10 "-"
+2017-09-11 11:53:15,305 INF 6a519a5037c60688 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:15 +0000] "GET /api/book/items?barcode=00001062 HTTP/1.1" 200 405 12 "-"
+2017-09-11 11:53:15,383 INF 52bedb43dacc7d14 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:15 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 125 73 "-"
+2017-09-11 11:53:16,615 INF 8866f70f6fda4eca -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:16 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2020 27 "-"
+2017-09-11 11:53:16,615 INF 86838ee263f2d720 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:16 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 6 "-"
+2017-09-11 11:53:16,631 INF 0802377a555325c5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:16 +0000] "GET /api/book/items?barcode=00001092 HTTP/1.1" 200 407 7 "-"
+2017-09-11 11:53:16,724 INF 97ffbda4f92cc2d2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:16 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 125 83 "-"
+2017-09-11 11:53:17,925 INF 0b14af0390cc023f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:17 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2414 8 "-"
+2017-09-11 11:53:38,346 INF 91db2b112e0b9a97 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:38 +0000] "GET /api/book/items?barcode=00001100 HTTP/1.1" 200 409 9 "-"
+2017-09-11 11:53:38,424 INF 65124062b6de72ef -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:38 +0000] "POST /api/book/return HTTP/1.1" 200 125 76 "-"
+2017-09-11 11:53:38,439 INF f7435a3016d3dc14 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:38 +0000] "GET /api/book/items?barcode=00001096 HTTP/1.1" 200 407 9 "-"
+2017-09-11 11:53:38,502 INF d31282139b09a903 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:38 +0000] "POST /api/book/return HTTP/1.1" 200 125 67 "-"
+2017-09-11 11:53:46,317 INF 90aa7a100442da9d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:46 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 20 "-"
+2017-09-11 11:53:46,333 INF 9441f2d45310d29b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:46 +0000] "GET /api/book/items?barcode=00001062 HTTP/1.1" 200 406 5 "-"
+2017-09-11 11:53:46,349 INF 13c7623fce6841bf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:46 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 60 11 "-"
+2017-09-11 11:53:47,550 INF 76953e27d4da454b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:47 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 1626 8 "-"
+2017-09-11 11:53:47,565 INF c7e89f56ef3d67b6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:47 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 5 "-"
+2017-09-11 11:53:47,581 INF 37f090d59019789d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:47 +0000] "GET /api/book/items?barcode=00001092 HTTP/1.1" 200 408 5 "-"
+2017-09-11 11:53:47,581 INF 97ec8f6e58e46ff7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:47 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 60 7 "-"
+2017-09-11 11:53:48,798 INF 3034fd69844dd08d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:48 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 1626 8 "-"
+2017-09-11 11:53:57,643 INF 1b708e9fc6b93da8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:57 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 11 "-"
+2017-09-11 11:53:57,643 INF 94e5f0b21ae0380b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:57 +0000] "GET /api/book/items?barcode=00001100 HTTP/1.1" 200 408 5 "-"
+2017-09-11 11:53:57,721 INF 01093391439e3623 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:57 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 125 69 "-"
+2017-09-11 11:53:58,938 INF 4b58b6427c698b7c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:58 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2021 7 "-"
+2017-09-11 11:53:58,938 INF eb959be3c32ed377 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:58 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 5 "-"
+2017-09-11 11:53:58,953 INF 2aa00cf12f6bd33a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:58 +0000] "GET /api/book/items?barcode=00001096 HTTP/1.1" 200 406 6 "-"
+2017-09-11 11:53:59,031 INF 44ffc8c3f6c206e7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:53:59 +0000] "POST /api/reader/members/411524199009088556/borrow HTTP/1.1" 200 125 76 "-"
+2017-09-11 11:54:00,248 INF c2a5cb598e084e0f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:54:00 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2414 10 "-"
+2017-09-11 11:54:03,119 INF c0fc0b5bfa666b69 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:54:03 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 14 "-"
+2017-09-11 11:54:03,119 INF 3a24945c077c4bbe -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:54:03 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 4 "-"
+2017-09-11 11:54:03,134 INF 4a99815f11424827 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:54:03 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2414 6 "-"
+2017-09-11 11:55:30,931 INF 99739b9b316ed77a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:30 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 6 "-"
+2017-09-11 11:55:30,947 INF dfb5a1816c016301 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:30 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 11:55:30,947 INF e45679fd6459326d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:30 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 51 5 "-"
+2017-09-11 11:55:36,812 INF 6da4d7fadf3aa30a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:36 +0000] "GET /api/book/items?barcode=00001958 HTTP/1.1" 200 339 5 "-"
+2017-09-11 11:55:40,463 INF b943122cfd941e33 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:40 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:55:40,478 INF 1aa2330a82f78307 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:40 +0000] "GET /api/book/items?barcode=00001958 HTTP/1.1" 200 339 6 "-"
+2017-09-11 11:55:40,541 INF c8cf851b68d3f75c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:40 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 70 "-"
+2017-09-11 11:55:41,758 INF 87d81f726fc753f3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:41 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 397 10 "-"
+2017-09-11 11:55:43,552 INF 5c3a3678c21d9fed -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:43 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 7 "-"
+2017-09-11 11:55:43,552 INF 801434f431084f7e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:43 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 5 "-"
+2017-09-11 11:55:43,567 INF 4e3de140387e39e0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:43 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 397 6 "-"
+2017-09-11 11:55:55,220 INF 377812db0f507a89 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:55 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:55:55,220 INF 4da3bc29590fb19f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:55 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 11:55:55,236 INF b8b94c75092057ab -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:55 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 814 5 "-"
+2017-09-11 11:55:56,281 INF fd45ae351114188d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:56 +0000] "GET /api/book/items?barcode=00001284 HTTP/1.1" 200 387 7 "-"
+2017-09-11 11:55:56,297 INF 5cc265912b4969af -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:56 +0000] "GET /api/book/items?barcode=00001324 HTTP/1.1" 200 392 5 "-"
+2017-09-11 11:55:57,826 INF 897293258531cf7d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:57 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 6 "-"
+2017-09-11 11:55:57,841 INF 31c6df05fdb28614 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:57 +0000] "GET /api/book/items?barcode=00001324 HTTP/1.1" 200 392 4 "-"
+2017-09-11 11:55:57,919 INF 96e69002d31a8139 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:57 +0000] "POST /api/reader/members/310105198001078547/borrow HTTP/1.1" 200 125 80 "-"
+2017-09-11 11:55:59,136 INF 071c532ce463f78c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:59 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1193 14 "-"
+2017-09-11 11:55:59,308 INF 03c977987226ecfc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:59 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:55:59,323 INF 6b6aa261a805707d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:59 +0000] "GET /api/book/items?barcode=00001284 HTTP/1.1" 200 387 4 "-"
+2017-09-11 11:55:59,386 INF cf653ef32eb180f8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:55:59 +0000] "POST /api/reader/members/310105198001078547/borrow HTTP/1.1" 200 125 61 "-"
+2017-09-11 11:56:00,587 INF 4b052f85d437cd83 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:00 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1567 9 "-"
+2017-09-11 11:56:00,930 INF a18681e8ab39c4d2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:00 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 6 "-"
+2017-09-11 11:56:00,930 INF 047f2c803d74a7ec -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:00 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 11:56:00,946 INF d6b9178ee99a9421 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:00 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1567 6 "-"
+2017-09-11 11:56:08,777 INF b9ccf6b6cb5db83a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:08 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:56:08,777 INF aad2b6c09ddd28f2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:08 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 11:56:08,792 INF 5c84839997a608a5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:08 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1567 4 "-"
+2017-09-11 11:56:10,649 INF 177daa9df372f647 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:10 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:56:10,696 INF 740edd178cfef796 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:10 +0000] "POST /api/reader/members/310105198001078547/renew HTTP/1.1" 200 124 47 "-"
+2017-09-11 11:56:10,711 INF 40b59708fce05293 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:10 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1567 5 "-"
+2017-09-11 11:56:10,961 INF e4dcae27f4b30a2e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:10 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:56:11,008 INF d5684d2a3d21f23f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "POST /api/reader/members/310105198001078547/renew HTTP/1.1" 200 124 42 "-"
+2017-09-11 11:56:11,023 INF 0fefdf42ccd88ebd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1567 5 "-"
+2017-09-11 11:56:11,242 INF 9eacafea99573229 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 5 "-"
+2017-09-11 11:56:11,288 INF 7a4c42e554460f4b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "POST /api/reader/members/310105198001078547/renew HTTP/1.1" 200 124 39 "-"
+2017-09-11 11:56:11,320 INF 9441a87b887b3220 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1701 17 "-"
+2017-09-11 11:56:11,507 INF cc21520ef4b29412 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 4 "-"
+2017-09-11 11:56:11,554 INF 31472acf8636bf69 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "POST /api/reader/members/310105198001078547/renew HTTP/1.1" 200 124 41 "-"
+2017-09-11 11:56:11,569 INF 5fbef8c796abb601 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:11 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 1701 5 "-"
+2017-09-11 11:56:36,529 INF 70634a1da5150f3d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:36 +0000] "GET /api/book/items?barcode=00001324 HTTP/1.1" 200 393 6 "-"
+2017-09-11 11:56:36,545 INF c8a77297764b813b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:36 +0000] "GET /api/book/items?barcode=00001958 HTTP/1.1" 200 340 8 "-"
+2017-09-11 11:56:36,545 INF cac55d5f9ba54948 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:36 +0000] "GET /api/book/items?barcode=00001284 HTTP/1.1" 200 388 4 "-"
+2017-09-11 11:56:42,598 INF b350370ac2d82796 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:42 +0000] "GET /api/book/items?barcode=00001958 HTTP/1.1" 200 340 5 "-"
+2017-09-11 11:56:42,676 INF d1b933d6cf52e22c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:42 +0000] "POST /api/book/return HTTP/1.1" 200 125 71 "-"
+2017-09-11 11:56:43,097 INF 3e63f633aeb7831d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:43 +0000] "GET /api/book/items?barcode=00001324 HTTP/1.1" 200 393 5 "-"
+2017-09-11 11:56:43,190 INF 7ebc5984aefec5fc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:43 +0000] "POST /api/book/return HTTP/1.1" 200 125 79 "-"
+2017-09-11 11:56:43,674 INF 7697a5271860688e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:43 +0000] "GET /api/book/items?barcode=00001284 HTTP/1.1" 200 388 11 "-"
+2017-09-11 11:56:43,768 INF 22476bb126a352c1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:43 +0000] "POST /api/book/return HTTP/1.1" 200 125 81 "-"
+2017-09-11 11:56:58,291 INF ee649a7ca033c9dd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:58 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 6 "-"
+2017-09-11 11:56:58,307 INF edbd7d67148d22f9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:58 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 3 "-"
+2017-09-11 11:56:58,307 INF 8339bad3d267a8af -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:56:58 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 421 4 "-"
+2017-09-11 11:57:04,687 INF 71338bf56ff2a813 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:04 +0000] "GET /api/book/items?barcode=00001340 HTTP/1.1" 200 399 4 "-"
+2017-09-11 11:57:04,687 INF 41f5b54d076dd8e0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:04 +0000] "GET /api/book/items?barcode=00001380 HTTP/1.1" 200 389 4 "-"
+2017-09-11 11:57:06,388 INF 0a0203703ff494f4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:06 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 7 "-"
+2017-09-11 11:57:06,388 INF 04bc500bc08092fe -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:06 +0000] "GET /api/book/items?barcode=00001380 HTTP/1.1" 200 389 4 "-"
+2017-09-11 11:57:06,466 INF 2b52532c99511875 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:06 +0000] "POST /api/reader/members/310105198001077789/borrow HTTP/1.1" 200 125 64 "-"
+2017-09-11 11:57:07,667 INF d478c4bb913ed6cb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:07 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 797 11 "-"
+2017-09-11 11:57:10,210 INF 9e1a92479853e7e2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:10 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 7 "-"
+2017-09-11 11:57:10,210 INF 509f2d081a829dbe -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:10 +0000] "GET /api/book/items?barcode=00001340 HTTP/1.1" 200 399 5 "-"
+2017-09-11 11:57:10,288 INF 5239341fb3cd197c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:10 +0000] "POST /api/reader/members/310105198001077789/borrow HTTP/1.1" 200 125 76 "-"
+2017-09-11 11:57:11,505 INF 5ffeff2335dadd83 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:11 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 1183 16 "-"
+2017-09-11 11:57:12,285 INF 1ea2ccd8d518cef8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:12 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 17 "-"
+2017-09-11 11:57:12,300 INF 35b89a4134535a77 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:12 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 4 "-"
+2017-09-11 11:57:12,300 INF dad3e5d85881afff -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:12 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 1183 6 "-"
+2017-09-11 11:57:23,220 INF 45a7e31afe744a2d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:23 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 8 "-"
+2017-09-11 11:57:23,220 INF 8ff8e24b788834ac -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:23 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 3 "-"
+2017-09-11 11:57:23,220 INF 1bd5f06ff6a3c5eb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:23 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 1183 4 "-"
+2017-09-11 11:57:24,952 INF 1c7df39eadd8c011 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:24 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 409 5 "-"
+2017-09-11 11:57:24,952 INF 2ac3c77dba530d2d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:24 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 386 5 "-"
+2017-09-11 11:57:26,465 INF 88f91e083cfa8ab2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:26 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 8 "-"
+2017-09-11 11:57:26,481 INF 8ca0288d41a19821 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:26 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 409 4 "-"
+2017-09-11 11:57:26,543 INF 79a04cfb82015d07 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:26 +0000] "POST /api/reader/members/310105198001077789/borrow HTTP/1.1" 200 125 63 "-"
+2017-09-11 11:57:27,744 INF 63ba6b64685ffa2a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:27 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 1579 7 "-"
+2017-09-11 11:57:28,711 INF 9bbd77b789cc19ff -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:28 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 5 "-"
+2017-09-11 11:57:28,727 INF fec46bd19e9c945e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:28 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 386 5 "-"
+2017-09-11 11:57:28,805 INF aad2d5ba2f9a1978 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:28 +0000] "POST /api/reader/members/310105198001077789/borrow HTTP/1.1" 200 125 72 "-"
+2017-09-11 11:57:30,006 INF 25b586275a241808 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:30 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 1954 8 "-"
+2017-09-11 11:57:30,693 INF ad612345450152c8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:30 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 4 "-"
+2017-09-11 11:57:30,708 INF fc60a3b7e59fd926 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:30 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 4 "-"
+2017-09-11 11:57:30,708 INF 5581f5e0418f5737 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:30 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 1954 4 "-"
+2017-09-11 11:57:34,203 INF b80f575e553bf0eb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:34 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 410 4 "-"
+2017-09-11 11:57:34,203 INF 05c820d6969f1c82 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:34 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 387 4 "-"
+2017-09-11 11:57:37,167 INF fdb409f6bbff303e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:37 +0000] "GET /api/book/items?barcode=00001380 HTTP/1.1" 200 390 8 "-"
+2017-09-11 11:57:37,167 INF d71829b80b2d975a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:37 +0000] "GET /api/book/items?barcode=00001340 HTTP/1.1" 200 400 5 "-"
+2017-09-11 11:57:48,087 INF 1e8536e4383ee23a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:48 +0000] "GET /api/book/items?barcode=00001380 HTTP/1.1" 200 390 5 "-"
+2017-09-11 11:57:48,149 INF 206accd872b725e3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:48 +0000] "POST /api/book/return HTTP/1.1" 200 125 60 "-"
+2017-09-11 11:57:48,898 INF 9113b88a10d85eac -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:48 +0000] "GET /api/book/items?barcode=00001340 HTTP/1.1" 200 400 4 "-"
+2017-09-11 11:57:48,976 INF 6dab91cba967ca36 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:57:48 +0000] "POST /api/book/return HTTP/1.1" 200 125 70 "-"
+2017-09-11 11:58:04,311 INF f52e24d0e81a6c98 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:04 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 410 4 "-"
+2017-09-11 11:58:04,311 INF 87256fefff2834df -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:04 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 387 4 "-"
+2017-09-11 11:58:07,977 INF a92339a7fc8874b5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:07 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 410 4 "-"
+2017-09-11 11:58:08,039 INF 272f82e322519f5f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:08 +0000] "POST /api/book/return HTTP/1.1" 200 125 63 "-"
+2017-09-11 11:58:08,881 INF 7735597e8ae183ec -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:08 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 387 4 "-"
+2017-09-11 11:58:08,944 INF 400bcf092a1276ab -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:08 +0000] "POST /api/book/return HTTP/1.1" 200 125 69 "-"
+2017-09-11 11:58:21,673 INF 2a5117caa8151ddd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:21 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 4 "-"
+2017-09-11 11:58:21,673 INF 402a160797cdd5ab -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:21 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 3 "-"
+2017-09-11 11:58:21,673 INF e958d585550fdf59 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:21 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2414 4 "-"
+2017-09-11 11:58:24,934 INF 9740bb4b05ffcfbc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:24 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 4 "-"
+2017-09-11 11:58:24,981 INF 10976dab2189f0e9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:24 +0000] "POST /api/reader/members/411524199009088556/renew HTTP/1.1" 200 124 42 "-"
+2017-09-11 11:58:24,981 INF daedb881c2708b2e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:24 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2414 3 "-"
+2017-09-11 11:58:25,917 INF e12bf1be6e414946 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:25 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 5 "-"
+2017-09-11 11:58:25,963 INF 4dd1a21fc0c02bc7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:25 +0000] "POST /api/reader/members/411524199009088556/renew HTTP/1.1" 200 124 48 "-"
+2017-09-11 11:58:25,979 INF c68076434249bfdf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:25 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2481 4 "-"
+2017-09-11 11:58:26,197 INF 3856bbdc29958d3f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 4 "-"
+2017-09-11 11:58:26,244 INF 221def41b25cef56 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "POST /api/reader/members/411524199009088556/renew HTTP/1.1" 200 124 45 "-"
+2017-09-11 11:58:26,244 INF 76961d3149f9cdc2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2548 3 "-"
+2017-09-11 11:58:26,478 INF 866f1cca0c53e803 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 4 "-"
+2017-09-11 11:58:26,525 INF db0ce5dccdaaa871 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "POST /api/reader/members/411524199009088556/renew HTTP/1.1" 200 124 41 "-"
+2017-09-11 11:58:26,541 INF 0944876b5434b26f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2548 6 "-"
+2017-09-11 11:58:26,759 INF 8a138265fe6d9fe1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 5 "-"
+2017-09-11 11:58:26,821 INF df2b8cba237da1db -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "POST /api/reader/members/411524199009088556/renew HTTP/1.1" 200 124 61 "-"
+2017-09-11 11:58:26,821 INF 3e49009039adf89a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:26 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2548 4 "-"
+2017-09-11 11:58:27,071 INF c0ea7bcfa69876b7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:27 +0000] "GET /api/reader/members?barcode=88888888556 HTTP/1.1" 200 522 30 "-"
+2017-09-11 11:58:27,102 INF 7a6473e7ecef8399 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:27 +0000] "POST /api/reader/members/411524199009088556/renew HTTP/1.1" 200 124 34 "-"
+2017-09-11 11:58:27,102 INF b4b3c1cc479f512b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:03:58:27 +0000] "GET /api/reader/members/411524199009088556/holdings HTTP/1.1" 200 2749 3 "-"
+2017-09-11 12:01:30,347 INF 091e6a3d30e038ce -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:30 +0000] "GET /api/book/items?barcode=00000264 HTTP/1.1" 200 381 4 "-"
+2017-09-11 12:01:30,347 INF b4e2264b90dd7391 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:30 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:30,784 INF d02470208a12a19f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:30 +0000] "GET /api/book/items?barcode=00001049 HTTP/1.1" 200 392 3 "-"
+2017-09-11 12:01:30,784 INF 565017f7f4b5d4f8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:30 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:31,112 INF e748a56c6dab1363 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:31 +0000] "GET /api/book/items?barcode=00000264 HTTP/1.1" 200 381 4 "-"
+2017-09-11 12:01:31,112 INF 009c08f873d983a3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:31 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:31,470 INF 195f61b8e789b9e8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:31 +0000] "GET /api/book/items?barcode=00001049 HTTP/1.1" 200 392 4 "-"
+2017-09-11 12:01:31,470 INF 82ebdb778df7d788 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:31 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:31,845 INF 707ce8e826bb71ee -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:31 +0000] "GET /api/book/items?barcode=00000264 HTTP/1.1" 200 381 4 "-"
+2017-09-11 12:01:31,845 INF d0015e2a845274d2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:31 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:32,172 INF 33852f99c43b73aa -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:32 +0000] "GET /api/book/items?barcode=00001204 HTTP/1.1" 200 407 4 "-"
+2017-09-11 12:01:32,172 INF 74b1d8c4b8df1e60 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:32 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:32,500 INF c73fafb84f4fcd44 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:32 +0000] "GET /api/book/items?barcode=00001420 HTTP/1.1" 200 410 3 "-"
+2017-09-11 12:01:32,500 INF ec12a87fdfe15843 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:32 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:32,874 INF 39614ced0a0aad59 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:32 +0000] "GET /api/book/items?barcode=00001421 HTTP/1.1" 200 405 4 "-"
+2017-09-11 12:01:32,874 INF 4cecec97cd25da44 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:32 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:33,155 INF d83e4926c7ba7d79 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:33 +0000] "GET /api/book/items?barcode=00001629 HTTP/1.1" 200 388 4 "-"
+2017-09-11 12:01:33,155 INF ec4a42cee149d25b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:33 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:33,483 INF 1e1649198e52ccaa -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:33 +0000] "GET /api/book/items?barcode=00001473 HTTP/1.1" 200 397 3 "-"
+2017-09-11 12:01:33,483 INF 792c93ea7eb7f739 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:33 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:33,842 INF 632c68bcf31809e3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:33 +0000] "GET /api/book/items?barcode=00001421 HTTP/1.1" 200 405 3 "-"
+2017-09-11 12:01:33,842 INF c5c2f03179456abf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:33 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:34,185 INF 3e1d5fca2a180e92 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:34 +0000] "GET /api/book/items?barcode=00001617 HTTP/1.1" 200 386 3 "-"
+2017-09-11 12:01:34,185 INF eaad7bf326986c85 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:34 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 12:01:34,528 INF 3625b64267397917 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:34 +0000] "GET /api/book/items?barcode=00001617 HTTP/1.1" 200 386 4 "-"
+2017-09-11 12:01:34,528 INF b1226bff90c2dc54 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:04:01:34 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:14:52,129 INF 6f4a08e77eebd747 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:14:52 +0000] "POST /api/reader/members HTTP/1.1" 201 67 108 "-"
+2017-09-11 13:18:01,747 INF 3906122d4fba8cac -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:18:01 +0000] "POST /api/reader/members HTTP/1.1" 201 67 47 "-"
+2017-09-11 13:21:51,551 INF 44935dc0abc2a0e9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:51 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:21:51,770 INF a047f9d3b999653f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:51 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:21:52,035 INF 58d18899fd85023c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:52 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:21:52,300 INF 091714516ccf5574 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:52 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:21:52,581 INF 82959f823d7c7670 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:52 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:21:52,830 INF bcbef585b2b016e5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:52 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:21:53,174 INF 1c567f4b030c3228 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:53 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 7 "-"
+2017-09-11 13:21:56,996 INF 51402056dc06bfe1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:56 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:21:58,244 INF adf1600d4adb5dfe -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:21:58 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:00,864 INF a7f5632e849925eb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:00 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 27 "-"
+2017-09-11 13:22:04,016 INF 98f879a4221c20ff -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:04 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:04,016 INF 53d844799dc51039 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:04 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:05,950 INF 6d81b82cdeb97b2b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:05 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:10,068 INF 76367f293ba13a35 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:10 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:10,084 INF d167808cec75eff6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:10 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:17,868 INF 68ea8f31634c2600 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:17 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:17,884 INF 702d84ea6e4500ca -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:17 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:22:18,414 INF 9d694e0b8452beea -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:18 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 22 "-"
+2017-09-11 13:22:18,414 INF 3dfba92ed2697783 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:18 +0000] "POST /api/book/return HTTP/1.1" 200 83 4 "-"
+2017-09-11 13:22:18,976 INF f0369f35da58cbfb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:18 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:18,976 INF 7460f78bff2280f1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:18 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:22:19,491 INF 50932cb0af6d326e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:19 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:19,491 INF 13d0a4f3ecf1975a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:19 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:22:20,084 INF 047533815ab40830 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:20 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:20,099 INF 610b259e5ac33cf5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:20 +0000] "POST /api/book/return HTTP/1.1" 200 83 4 "-"
+2017-09-11 13:22:20,598 INF 011e6030e2507665 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:20 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:20,614 INF c9e55184c784866f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:20 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:22:21,129 INF c8e0bb4d5ab86be4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:21 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:21,144 INF d91f98e803ef756a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:21 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:22:21,706 INF fee4a5e678dc1fb6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:21 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:21,722 INF 653f48ca7e9822f9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:21 +0000] "POST /api/book/return HTTP/1.1" 200 83 5 "-"
+2017-09-11 13:22:22,221 INF 6a01e6114fcb639b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:22 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:22,236 INF f29bdf72e384ba26 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:22 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:22:22,829 INF 6ffdc367ddc2c684 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:22 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 5 "-"
+2017-09-11 13:22:22,829 INF 551270ecc7da426d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:22 +0000] "POST /api/book/return HTTP/1.1" 200 83 4 "-"
+2017-09-11 13:22:30,333 INF 2ac03386dfca871a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:30 +0000] "GET /api/reader/members?barcode=88888888635 HTTP/1.1" 200 567 4 "-"
+2017-09-11 13:22:30,348 INF fa111b87e1683a3e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:30 +0000] "GET /api/reader/levels/6798b474ce91609353d5693ed1fef4de HTTP/1.1" 200 279 3 "-"
+2017-09-11 13:22:30,348 INF 195216905e515636 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:30 +0000] "GET /api/reader/members/310105198001077789/holdings HTTP/1.1" 200 421 3 "-"
+2017-09-11 13:22:32,922 INF e7ec8c55b91d017e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 9 "-"
+2017-09-11 13:22:32,922 INF 16b683a7886ce967 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:32,938 INF 6bb193aedead1406 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:32,938 INF b0f12577beaa5d6f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:32,954 INF a2e4c9af62f71423 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:32,954 INF 32cba6ac219868c6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:32,954 INF 8ae242b2c5eea515 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:32,969 INF b32c2e7693755e16 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:32,969 INF 03cf53df94181590 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:32,969 INF 450eed0ddfaafebd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:32 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:42,423 INF 4150679ba6deda3d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:42 +0000] "GET /api/reader/members?barcode=88888888077 HTTP/1.1" 200 556 8 "-"
+2017-09-11 13:22:42,423 INF f374b827a6021d4e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:42 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 13:22:42,423 INF 7774e2135a50d83a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:42 +0000] "GET /api/reader/members/310105198001078547/holdings HTTP/1.1" 200 948 4 "-"
+2017-09-11 13:22:44,934 INF 8cd8b784bab81010 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:44,934 INF 2e8b15b312087f96 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:44,934 INF 61ff2163e7dff37d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:44,934 INF 8cce47b0164fb5d6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:44,950 INF 042f070a5fb9bcc5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:44,950 INF 1120c48129c59073 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:44,950 INF bf293141bae91c48 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:44,966 INF ae4404613710df5a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:44,966 INF 036e0cd810b63020 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:44,966 INF f240dfcf1d69876a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:44 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,193 INF 35a4a71c92c20695 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:49,193 INF e9f1d40df202acf9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,193 INF 6034ba6618d8f0a6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,209 INF bce157a6039fae50 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,209 INF 1465ca8d34cca487 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:49,209 INF 91ee3ee08cddee2a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,224 INF 6095516db980301d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,224 INF 2968304f48fd6e39 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,224 INF 2155fb6b1b8fbb84 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:49,240 INF bd9629420e3239a1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:49 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:50,738 INF 1b89f3e8b53e1b8a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:50 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:22:50,753 INF 26d9125327c89f7b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:50 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 2 "-"
+2017-09-11 13:22:50,753 INF 3dca41d0c2923431 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:50 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 435 3 "-"
+2017-09-11 13:22:57,430 INF f4dc63db69a63d54 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:57 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:22:57,446 INF 1fad340fddce2b30 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:57 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 13:22:57,446 INF 2a86da7addf1d9ab -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:57 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 51 3 "-"
+2017-09-11 13:22:59,817 INF 55bdde16dfaa6a73 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:22:59,817 INF 8e9d3b947cec0e76 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:59,817 INF 7936a45b49fe7297 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:59,833 INF 0f4929cf9642c39e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:59,833 INF d2d0d8d5cec17d6f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:59,833 INF 8af609977269797e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:59,848 INF 703b6784188cf082 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:22:59,848 INF 6d35f59b39c06368 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:59,848 INF 0c0a92e6b50a9f8a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 2 "-"
+2017-09-11 13:22:59,848 INF f2a0c34d5e945220 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:22:59 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:01,455 INF 9832c083e4f8def6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:01 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:23:01,471 INF 92df17649e416e5f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:01 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:01,533 INF 6b60556420ae6669 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:01 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 68 "-"
+2017-09-11 13:23:02,734 INF 04538a5e2d02c351 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:02 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 397 3 "-"
+2017-09-11 13:23:03,249 INF 09bea29453480339 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:03 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:23:03,249 INF 8913dcf6c7389917 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:03 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:03,311 INF 41ffe1a529ea1af0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:03 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 69 "-"
+2017-09-11 13:23:04,513 INF b9243cb3322f9f46 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:04 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 744 5 "-"
+2017-09-11 13:23:04,856 INF dfb8412c57bffdcf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:04 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:23:04,856 INF ca26985a2db2e767 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:04 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:23:04,934 INF 845e01435aa30946 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:04 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 81 "-"
+2017-09-11 13:23:06,135 INF 68f00475f6f2af75 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:06 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 1091 3 "-"
+2017-09-11 13:23:06,494 INF 5080a0071f939a7d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:06 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 6 "-"
+2017-09-11 13:23:06,494 INF 95b62fd74489fc62 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:06 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:06,587 INF e7091617e16dd0cf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:06 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 88 "-"
+2017-09-11 13:23:07,789 INF 97c6e80f12ad0492 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:07 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 1438 4 "-"
+2017-09-11 13:23:08,038 INF fc95231bbf842049 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:08 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:23:08,038 INF 09fbadf6adca6a5d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:08 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:08,116 INF 153faa3ad509b42f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:08 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 72 "-"
+2017-09-11 13:23:09,317 INF 355b5a2829294691 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:09 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 1785 4 "-"
+2017-09-11 13:23:09,645 INF 4b681ea40d76a178 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:09 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:23:09,661 INF 6b9bd182d64e02ef -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:09 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 5 "-"
+2017-09-11 13:23:09,739 INF fa4b00068d4fe94d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:09 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 74 "-"
+2017-09-11 13:23:10,940 INF d775c9aa613004aa -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:10 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 2132 4 "-"
+2017-09-11 13:23:11,221 INF ef7d671a49fd4b8e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:11 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:23:11,236 INF 44fc9d83ec8a26eb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:11 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:11,299 INF 569da2155696e94d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:11 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 60 "-"
+2017-09-11 13:23:12,500 INF b86c31bce8d0054f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:12 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 2479 3 "-"
+2017-09-11 13:23:12,843 INF eacae1357ed4b750 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:12 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:23:12,843 INF 461ee94367921667 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:12 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:12,905 INF 19b5f33c0489c093 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:12 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 62 "-"
+2017-09-11 13:23:14,107 INF 829da9ca5c5a9636 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:14 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 2826 4 "-"
+2017-09-11 13:23:14,450 INF ac5d11eeb75538c4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:14 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:23:14,450 INF 0dfbf048934d40b7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:14 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:14,512 INF 39c4be9729735ec6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:14 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 60 "-"
+2017-09-11 13:23:15,745 INF 31f1f57b2513dc55 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:15 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 3173 21 "-"
+2017-09-11 13:23:15,994 INF 203fae8177d82f2e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:15 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:23:15,994 INF 4666e25ed6e19471 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:15 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:23:16,072 INF 0217c77df6fde6c9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:16 +0000] "POST /api/reader/members/310105198001078545/borrow HTTP/1.1" 200 125 70 "-"
+2017-09-11 13:23:17,273 INF 945d14b9249723e0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:17 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 3521 4 "-"
+2017-09-11 13:23:17,679 INF caaa2c6419115514 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:17 +0000] "GET /api/reader/members?barcode=88888888657 HTTP/1.1" 200 556 5 "-"
+2017-09-11 13:23:17,695 INF bb72738eaa51cf6a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:17 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 2 "-"
+2017-09-11 13:23:17,695 INF 1148598a0d65fec2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:17 +0000] "GET /api/reader/members/310105198001078545/holdings HTTP/1.1" 200 3521 3 "-"
+2017-09-11 13:23:32,811 INF 3266d3ac41ef304c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 340 4 "-"
+2017-09-11 13:23:32,811 INF 4770514fec5c103a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,827 INF 575a6c20704fceb7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,827 INF 802dd894be222017 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,827 INF a8b65abcad628c4f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,842 INF c6b6c33f4dfcc1a6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,842 INF 2bf1389ba942deac -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,842 INF ea9450b686fde76b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,858 INF bba1be96eff3d9dc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:32,858 INF 5feb986a0a56159c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:32 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:35,728 INF f29179cc34820adf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:35 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 340 4 "-"
+2017-09-11 13:23:35,791 INF 52b70648caa964a4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:35 +0000] "POST /api/book/return HTTP/1.1" 200 125 66 "-"
+2017-09-11 13:23:36,259 INF adc190201b96222a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:36 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:36,321 INF 5402e748bb1253a2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:36 +0000] "POST /api/book/return HTTP/1.1" 200 125 59 "-"
+2017-09-11 13:23:36,773 INF ab9394b894c26e25 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:36 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:36,851 INF 187f05e40bbc6ae8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:36 +0000] "POST /api/book/return HTTP/1.1" 200 125 76 "-"
+2017-09-11 13:23:37,366 INF a2886c82b11525ad -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:37 +0000] "GET /api/book/items?barcode=00002004 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:37,460 INF 97f756970140ae7c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:37 +0000] "POST /api/book/return HTTP/1.1" 200 125 98 "-"
+2017-09-11 13:23:37,881 INF 464742ad6cb98292 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:37 +0000] "GET /api/book/items?barcode=00002005 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:37,943 INF 7d85b4622f2de09a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:37 +0000] "POST /api/book/return HTTP/1.1" 200 125 65 "-"
+2017-09-11 13:23:38,411 INF 15de8d2910b1ac1a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:38 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:38,489 INF 408ead4ac166942f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:38 +0000] "POST /api/book/return HTTP/1.1" 200 125 74 "-"
+2017-09-11 13:23:39,004 INF 7a71212ea8f3717d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:39 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 340 3 "-"
+2017-09-11 13:23:39,129 INF 6edb5eda8b3f0f60 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:39 +0000] "POST /api/book/return HTTP/1.1" 200 125 114 "-"
+2017-09-11 13:23:39,519 INF b1c157b98a71d466 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:39 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 340 4 "-"
+2017-09-11 13:23:39,597 INF a862629ec684fe01 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:39 +0000] "POST /api/book/return HTTP/1.1" 200 125 66 "-"
+2017-09-11 13:23:40,096 INF 3c4c42090bdd6378 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:40 +0000] "GET /api/book/items?barcode=00002009 HTTP/1.1" 200 340 4 "-"
+2017-09-11 13:23:40,159 INF 8d91caa7c7daf41f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:40 +0000] "POST /api/book/return HTTP/1.1" 200 125 57 "-"
+2017-09-11 13:23:40,611 INF 0ae6ee20632564c7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:40 +0000] "GET /api/book/items?barcode=00002012 HTTP/1.1" 200 340 4 "-"
+2017-09-11 13:23:40,689 INF 692c2e0c7111c077 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:23:40 +0000] "POST /api/book/return HTTP/1.1" 200 125 68 "-"
+2017-09-11 13:25:16,957 INF 740fbb451103d05b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:16 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:25:20,436 INF af0ac562d5698efc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:20 +0000] "GET /api/book/items?barcode=00002008 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:25:20,451 INF 0d65be83631e1ab1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:20 +0000] "POST /api/book/return HTTP/1.1" 200 83 2 "-"
+2017-09-11 13:25:53,040 INF 8156974a56e4db55 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:53 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:25:53,040 INF e1f8372a5c84cf39 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:53 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 2 "-"
+2017-09-11 13:25:53,040 INF 4e0ab4e37f17335c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:53 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 435 3 "-"
+2017-09-11 13:25:54,100 INF 2260134cc39bfad9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:54 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:25:54,116 INF 3ed18652f919c9a0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:25:54 +0000] "GET /api/book/items?barcode=00001580 HTTP/1.1" 200 388 4 "-"
+2017-09-11 13:26:19,482 INF 57d584422bb66668 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:19 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:26:19,497 INF a58f27435d8fd7e4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:19 +0000] "GET /api/book/items?barcode=00001417 HTTP/1.1" 200 409 3 "-"
+2017-09-11 13:26:36,127 INF 57b3a3258feda134 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:36 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 4 "-"
+2017-09-11 13:26:39,106 INF c82ad35ff4e4d19e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:39 +0000] "GET /api/book/items?barcode=00001533 HTTP/1.1" 200 415 4 "-"
+2017-09-11 13:26:40,822 INF b11c25567c00db7d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:40 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 5 "-"
+2017-09-11 13:26:59,324 INF 6e6962dc2f2e6679 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:59 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:26:59,324 INF 12ad20f6cf4490f7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:59 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 3 "-"
+2017-09-11 13:26:59,324 INF 5cead6ea545c54d3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:26:59 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 435 3 "-"
+2017-09-11 13:27:01,430 INF 327ae16fdced034c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 25 "-"
+2017-09-11 13:27:01,446 INF 789cf644daa00c3f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:01,446 INF 16bfcbeb0c3d8498 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:01,446 INF a634f9a9e4362005 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00001417 HTTP/1.1" 200 409 3 "-"
+2017-09-11 13:27:01,461 INF 39f453d7226691eb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00001580 HTTP/1.1" 200 388 3 "-"
+2017-09-11 13:27:01,461 INF 99824858a0fb899d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00001471 HTTP/1.1" 200 412 3 "-"
+2017-09-11 13:27:01,461 INF e940ff680f1cbdcb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00001533 HTTP/1.1" 200 415 3 "-"
+2017-09-11 13:27:01,477 INF b0ac4497b378bb38 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:01,477 INF 687c7c166c326aaf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:01 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:11,352 INF a7ad2830444c8237 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:11 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:27:11,352 INF db27c319dfbe5585 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:11 +0000] "GET /api/book/items?barcode=00002000 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:11,414 INF 689bf0ee2220b9b1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:11 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 64 "-"
+2017-09-11 13:27:12,631 INF ae1a4df43798f02c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:12 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 782 6 "-"
+2017-09-11 13:27:13,099 INF 7d975d232792ccf2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:13 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:13,099 INF 41d05ae8643a8bfb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:13 +0000] "GET /api/book/items?barcode=00002001 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:13,161 INF b163f82523ba09f6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:13 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 63 "-"
+2017-09-11 13:27:14,378 INF e18d417b70445439 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:14 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 1129 3 "-"
+2017-09-11 13:27:14,706 INF 3c0f36cbad35c3f2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:14 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:14,706 INF a7c3d6fb313e18a2 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:14 +0000] "GET /api/book/items?barcode=00002002 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:14,784 INF 7129a3f49aed45cc -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:14 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 73 "-"
+2017-09-11 13:27:15,985 INF cc76e2f4b552e7e9 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:15 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 1476 4 "-"
+2017-09-11 13:27:16,250 INF 456a1d0358eb949e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:16 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:27:16,250 INF fe83a3bd61167a30 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:16 +0000] "GET /api/book/items?barcode=00002006 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:16,359 INF 29cc1e58f3010237 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:16 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 98 "-"
+2017-09-11 13:27:17,545 INF d50862e9479d6b91 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:17 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 1823 4 "-"
+2017-09-11 13:27:17,841 INF aa7b1fe17a148f99 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:17 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:17,857 INF 1a5919d586724699 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:17 +0000] "GET /api/book/items?barcode=00002007 HTTP/1.1" 200 339 3 "-"
+2017-09-11 13:27:17,966 INF f81d01885c4f1f7c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:17 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 106 "-"
+2017-09-11 13:27:19,152 INF ae34262256315ec7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:19 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2170 3 "-"
+2017-09-11 13:27:19,511 INF 024d87bf638a78ca -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:19 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 21 "-"
+2017-09-11 13:27:19,511 INF 01290e300fd57b12 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:19 +0000] "GET /api/book/items?barcode=00001471 HTTP/1.1" 200 412 3 "-"
+2017-09-11 13:27:19,589 INF 125ce7fc50ae1921 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:19 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 73 "-"
+2017-09-11 13:27:20,790 INF b76355a69dff5060 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:20 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2569 4 "-"
+2017-09-11 13:27:21,039 INF e5a3653775e3d754 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:21 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:21,039 INF d54b61f2b0c1cc10 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:21 +0000] "GET /api/book/items?barcode=00001580 HTTP/1.1" 200 388 6 "-"
+2017-09-11 13:27:21,102 INF 1efbfc6d44ce55ea -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:21 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 63 "-"
+2017-09-11 13:27:22,319 INF f4af6ec291bd2e71 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:22 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2944 3 "-"
+2017-09-11 13:27:22,662 INF 87382120812b459e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:22 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:22,662 INF 65669288a592f548 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:22 +0000] "GET /api/book/items?barcode=00001533 HTTP/1.1" 200 415 3 "-"
+2017-09-11 13:27:22,724 INF fc9e89d5ab8b77dd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:22 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 62 "-"
+2017-09-11 13:27:23,925 INF c89fd2fd7efc964e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:23 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 3346 4 "-"
+2017-09-11 13:27:24,253 INF 21c70c96430ac14b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:24 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:24,253 INF aa4f4999e70f09b0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:24 +0000] "GET /api/book/items?barcode=00001417 HTTP/1.1" 200 409 3 "-"
+2017-09-11 13:27:24,347 INF d4658b6db031ac3e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:24 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 93 "-"
+2017-09-11 13:27:25,548 INF d86b58206575248e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:25 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 3743 4 "-"
+2017-09-11 13:27:25,875 INF 34d5f0ef066afb41 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:25 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:27:25,875 INF bbebed0fa2aac37c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:25 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 2 "-"
+2017-09-11 13:27:25,891 INF 8f7b3caf4cb6fb93 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:27:25 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 3743 4 "-"
+2017-09-11 13:28:09,805 INF c3bdd8337582c503 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:09 +0000] "GET /api/book/items?barcode=00001417 HTTP/1.1" 200 410 3 "-"
+2017-09-11 13:28:09,867 INF c9439fc5a986a7a6 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:09 +0000] "POST /api/book/return HTTP/1.1" 200 125 58 "-"
+2017-09-11 13:28:10,148 INF 061c2f138c81d421 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:10 +0000] "GET /api/book/items?barcode=00001580 HTTP/1.1" 200 389 3 "-"
+2017-09-11 13:28:10,211 INF 08e3a951a0e899a0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:10 +0000] "POST /api/book/return HTTP/1.1" 200 125 61 "-"
+2017-09-11 13:28:28,026 INF 9901c1816ad802c5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:28 +0000] "GET /api/book/items?barcode=00001471 HTTP/1.1" 200 413 3 "-"
+2017-09-11 13:28:28,088 INF 369a82f28f71cddd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:28 +0000] "POST /api/book/return HTTP/1.1" 200 125 57 "-"
+2017-09-11 13:28:38,649 INF c6a49e0de0033454 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:38 +0000] "GET /api/book/items?barcode=00001533 HTTP/1.1" 200 416 4 "-"
+2017-09-11 13:28:38,712 INF 94913d4eaf8c356a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:28:38 +0000] "POST /api/book/return HTTP/1.1" 200 125 60 "-"
+2017-09-11 13:29:47,430 INF 2f2da69138645827 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:29:47 +0000] "GET /api/book/items?barcode=00001518 HTTP/1.1" 200 406 4 "-"
+2017-09-11 13:29:47,430 INF 22272c8f4215188c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:29:47 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 13:39:50,621 INF 1d1e34a72451740a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:50 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 10 "-"
+2017-09-11 13:39:50,636 INF b4bd54dfe6754938 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:50 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 2 "-"
+2017-09-11 13:39:50,636 INF ce15ce2dba6e7ebf -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:50 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2170 3 "-"
+2017-09-11 13:39:51,728 INF b0d2e6f3c99d2598 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:51 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 386 3 "-"
+2017-09-11 13:39:54,536 INF 35e9e9c909570a79 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:54 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 409 4 "-"
+2017-09-11 13:39:57,032 INF 1684cc7e168e6a8c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:57 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 3 "-"
+2017-09-11 13:39:57,048 INF ce41c36063e2bf62 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:57 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 409 4 "-"
+2017-09-11 13:39:57,095 INF 24c244b9fe5dd626 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:57 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 54 "-"
+2017-09-11 13:39:58,296 INF 5928409cf28ea615 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:58 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2566 4 "-"
+2017-09-11 13:39:59,653 INF 2ec890e1c0d69a2d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:59 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 4 "-"
+2017-09-11 13:39:59,653 INF 1945e56f1bd54224 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:59 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 386 3 "-"
+2017-09-11 13:39:59,747 INF 5fb7b0ba5a299e9b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:39:59 +0000] "POST /api/reader/members/310105198001078569/borrow HTTP/1.1" 200 125 89 "-"
+2017-09-11 13:40:00,948 INF e6b4d88b047f7c93 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:00 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2941 9 "-"
+2017-09-11 13:40:01,556 INF 10522f04dd52941f -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:01 +0000] "GET /api/reader/members?barcode=88888888070 HTTP/1.1" 200 556 5 "-"
+2017-09-11 13:40:01,556 INF b3a0f7e5c0385e5b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:01 +0000] "GET /api/reader/levels/AVlxojY0MA1k5oSJDyoB HTTP/1.1" 200 267 2 "-"
+2017-09-11 13:40:01,572 INF 0339fe0d0e1cd69c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:01 +0000] "GET /api/reader/members/310105198001078569/holdings HTTP/1.1" 200 2941 5 "-"
+2017-09-11 13:40:09,138 INF 8825fd3bc9ed9ae8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:09 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 410 4 "-"
+2017-09-11 13:40:09,138 INF 543c641e80f21fa8 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:09 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 387 3 "-"
+2017-09-11 13:40:11,322 INF b91db28d02c6ea9c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:11 +0000] "GET /api/book/items?barcode=00001079 HTTP/1.1" 200 410 3 "-"
+2017-09-11 13:40:11,384 INF 277ef80c61dd090e -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:11 +0000] "POST /api/book/return HTTP/1.1" 200 125 62 "-"
+2017-09-11 13:40:12,071 INF 21d03699c5be354a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:12 +0000] "GET /api/book/items?barcode=00000287 HTTP/1.1" 200 387 6 "-"
+2017-09-11 13:40:12,149 INF 2d9fadaa07695f4c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:05:40:12 +0000] "POST /api/book/return HTTP/1.1" 200 125 72 "-"
+2017-09-11 15:44:42,128 INF 74b8516b95228cbb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:07:44:42 +0000] "GET /api/book/items?barcode=00001341 HTTP/1.1" 200 404 4 "-"
+2017-09-11 15:45:42,781 INF e219f250a14c4416 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:07:45:42 +0000] "GET /api/book/items?barcode=00001341 HTTP/1.1" 200 404 3 "-"
+2017-09-11 15:45:42,797 INF 4bcdd8cd868ff72c -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:07:45:42 +0000] "POST /api/book/return HTTP/1.1" 200 83 5 "-"
+2017-09-11 15:47:46,786 INF 0182d95ea5fe20d1 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:07:47:46 +0000] "GET /api/book/items?barcode=00001074 HTTP/1.1" 200 416 4 "-"
+2017-09-11 15:47:46,801 INF 7d0824cdd92609ce -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:07:47:46 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:03,375 INF 156e58b41db06919 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:03 +0000] "GET /api/book/items?barcode=00001617 HTTP/1.1" 200 386 4 "-"
+2017-09-11 23:41:03,484 INF 5c0a944011075345 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:03 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:03,578 INF 1c0f95368c492d3b -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:03 +0000] "GET /api/book/items?barcode=00001617 HTTP/1.1" 200 386 3 "-"
+2017-09-11 23:41:03,578 INF fe2d213a8a6b962a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:03 +0000] "POST /api/book/return HTTP/1.1" 200 83 2 "-"
+2017-09-11 23:41:04,062 INF 41e63f4f074e7cbb -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:04 +0000] "GET /api/book/items?barcode=00001421 HTTP/1.1" 200 405 3 "-"
+2017-09-11 23:41:04,077 INF 4a530598b5ced389 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:04 +0000] "POST /api/book/return HTTP/1.1" 200 83 2 "-"
+2017-09-11 23:41:05,325 INF 5c0aff69f7eb98d0 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:05 +0000] "GET /api/book/items?barcode=00001473 HTTP/1.1" 200 397 4 "-"
+2017-09-11 23:41:05,325 INF 9a416f7b16072564 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:05 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:05,434 INF 51ecf2792479f6e3 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:05 +0000] "GET /api/book/items?barcode=00001629 HTTP/1.1" 200 388 3 "-"
+2017-09-11 23:41:05,434 INF f76845c3a84b692d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:05 +0000] "POST /api/book/return HTTP/1.1" 200 83 2 "-"
+2017-09-11 23:41:05,824 INF ed923671e0381314 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:05 +0000] "GET /api/book/items?barcode=00001421 HTTP/1.1" 200 405 3 "-"
+2017-09-11 23:41:05,840 INF 894efc989574ba50 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:05 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:06,043 INF 99ad86ccab1812b5 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:06 +0000] "GET /api/book/items?barcode=00001420 HTTP/1.1" 200 410 3 "-"
+2017-09-11 23:41:06,074 INF a01779e6eb04bca7 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:06 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:06,370 INF 6d1ae9081ed036cd -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:06 +0000] "GET /api/book/items?barcode=00001204 HTTP/1.1" 200 407 3 "-"
+2017-09-11 23:41:06,370 INF e1c909dca1bab704 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:06 +0000] "POST /api/book/return HTTP/1.1" 200 83 5 "-"
+2017-09-11 23:41:06,714 INF 83956922c1971e96 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:06 +0000] "GET /api/book/items?barcode=00000264 HTTP/1.1" 200 381 3 "-"
+2017-09-11 23:41:06,714 INF 8555636d66c17dab -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:06 +0000] "POST /api/book/return HTTP/1.1" 200 83 2 "-"
+2017-09-11 23:41:07,026 INF 0bb7e6253a35d9ff -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "GET /api/book/items?barcode=00001049 HTTP/1.1" 200 392 3 "-"
+2017-09-11 23:41:07,041 INF 3289bcd073c02cd4 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "POST /api/book/return HTTP/1.1" 200 83 5 "-"
+2017-09-11 23:41:07,338 INF a29aee956c59cc2a -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "GET /api/book/items?barcode=00000264 HTTP/1.1" 200 381 3 "-"
+2017-09-11 23:41:07,338 INF 125defff4157b32d -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:07,681 INF 8da1ad0137505def -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "GET /api/book/items?barcode=00001049 HTTP/1.1" 200 392 3 "-"
+2017-09-11 23:41:07,696 INF d753af3a06d72c57 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "POST /api/book/return HTTP/1.1" 200 83 3 "-"
+2017-09-11 23:41:07,977 INF 2347e47aec968058 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "GET /api/book/items?barcode=00000264 HTTP/1.1" 200 381 3 "-"
+2017-09-11 23:41:07,977 INF 09d7c984c9310b65 -                             AccessLoggingFilter       127.0.0.1 - - [11/九月/2017:15:41:07 +0000] "POST /api/book/return HTTP/1.1" 200 83 2 "-"

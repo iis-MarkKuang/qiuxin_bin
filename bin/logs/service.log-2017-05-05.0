@@ -1,0 +1,486 @@
+2017-05-05 09:50:53,307 INF                  -                             ApiServerMain$            Process started
+2017-05-05 09:51:07,320 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-05 09:51:46,086 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-05 09:51:46,101 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-05 09:51:46,101 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-05 09:51:47,459 INF                  -                             ApiServerMain$            Warming up.
+2017-05-05 09:51:47,568 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-05 09:51:47,583 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-05 09:51:47,708 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-05 09:51:47,708 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-05 09:51:47,708 INF                  -                             ApiServerMain$            api-service started.
+2017-05-05 09:51:47,708 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-05-05 10:37:10,899 INF                  -                             ApiServerMain$            Process started
+2017-05-05 10:37:14,986 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-05 10:37:25,008 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-05 10:37:25,055 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-05 10:37:25,055 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-05 10:37:26,771 INF                  -                             ApiServerMain$            Warming up.
+2017-05-05 10:37:26,880 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-05 10:37:26,880 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-05 10:37:27,176 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-05 10:37:27,176 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-05 10:37:27,176 INF                  -                             ApiServerMain$            api-service started.
+2017-05-05 10:37:27,176 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-05-05 10:38:06,395 INF 1866902d9204f2fa -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:38:06 +0000] "POST /api/auth/token HTTP/1.1" 200 230 12008 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:38:07,378 INF e5524c65e0444db4 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:38:07 +0000] "GET /api/auth/info?_=1493951871447 HTTP/1.1" 200 2426 400 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:38:17,299 INF 7a00a00a9de69d9d -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:38:17 +0000] "GET /api/book/reference?keyword=&author=&title=&isbn=&publisher=&clc=&publish_year=&topic=&offset=0&limit=10&hold=false&_=1493951871451 HTTP/1.1" 200 24207 3144 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:38:31,760 INF d4ffd9c778f2eeb6 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:38:31 +0000] "GET /api/data/ranking_book?start_time=1493856000000&end_time=1493942400000&_=1493951871456 HTTP/1.1" 200 24 628 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:38:38,297 INF b868e68eb035d533 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:38:38 +0000] "GET /api/data/ranking_book?start_time=1493683200000&end_time=1493942400000&_=1493951871457 HTTP/1.1" 200 24 292 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:58:55,530 INF eb01901923636b57 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:58:55 +0000] "GET /api/book/languages?_=1493951871464 HTTP/1.1" 200 674 199 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:58:56,179 INF a4198e7aa1e1b1e7 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:58:56 +0000] "GET /api/book/bookstacks?offset=0&limit=-1&nested=true&_=1493951871465 HTTP/1.1" 200 972 582 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 10:59:58,125 INF 0e8560cfce0e43dc -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:02:59:58 +0000] "GET /api/book/writing_method?pid=0&_=1493951871466 HTTP/1.1" 200 97 2 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:03:25,296 INF c505267cd12d18fd -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:03:25 +0000] "POST /api/book/items HTTP/1.1" 200 58 1706 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:03:30,390 INF f6a160363f76a6ae -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:03:30 +0000] "GET /api/book/reference?keyword=&author=&title=&isbn=&publisher=&clc=&publish_year=&topic=&offset=0&limit=10&hold=false&_=1493951871470 HTTP/1.1" 200 24207 147 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:03:48,312 INF 1c07517b2b1e152d -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:03:48 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA%E6%97%A5%E6%9C%9F&isbn=&publisher=&clc=&publish_year=&topic=&offset=&limit=10&hold=false&_=1493951871471 HTTP/1.1" 200 51 75 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:03:52,156 INF b96f86d8151218e0 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:03:52 +0000] "GET /api/book/reference?keyword=&author=&title=&isbn=&publisher=&clc=&publish_year=&topic=&offset=0&limit=10&hold=false&_=1493951871472 HTTP/1.1" 200 24207 54 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:03:55,281 INF e954451ce5b8803d -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:03:55 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA&isbn=&publisher=&clc=&publish_year=&topic=&offset=&limit=10&hold=false&_=1493951871473 HTTP/1.1" 200 4493 22 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:04:04,454 INF 0e0fc1f3701ad967 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:04:04 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA%E6%97%A5%E8%AE%B0&isbn=&publisher=&clc=&publish_year=&topic=&offset=&limit=10&hold=false&_=1493951871474 HTTP/1.1" 200 2022 29 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:04:42,527 INF 8d41c29e092739de -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:04:42 +0000] "GET /api/auth/info?_=1493953466508 HTTP/1.1" 200 2426 456 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:04:43,953 INF 583017d149719fc9 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:04:43 +0000] "GET /api/book/reference?keyword=&author=&title=&isbn=&publisher=&clc=&publish_year=&topic=&offset=0&limit=10&hold=false&_=1493953466512 HTTP/1.1" 200 24207 38 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:04:54,219 INF e58475d44d5267c8 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:04:54 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA%E6%97%A5%E8%AE%B0&isbn=&publisher=&clc=&publish_year=&topic=&offset=&limit=10&hold=false&_=1493953466513 HTTP/1.1" 200 2022 30 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:07:41,250 INF 102aee7648903b57 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:07:41 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA%E6%97%A5%E8%AE%B01&isbn=&publisher=&clc=&publish_year=&topic=&offset=&limit=10&hold=false&_=1493953466514 HTTP/1.1" 200 51 27 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:07:42,810 INF 6dc8e67cbdd87b19 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:07:42 +0000] "GET /api/book/reference?keyword=&author=&title=&isbn=&publisher=&clc=&publish_year=&topic=&offset=0&limit=10&hold=false&_=1493953466515 HTTP/1.1" 200 24207 25 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:07:46,117 INF 5fde528dfe7acdaf -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:07:46 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA%E6%97%A5%E8%AE%B0&isbn=&publisher=&clc=&publish_year=&topic=&offset=&limit=10&hold=false&_=1493953466516 HTTP/1.1" 200 2022 15 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:15:17,913 WAR                  -                             finagle                   Unhandled exception in connection with /127.0.0.1:61407 , shutting down connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-05-05 11:15:17,929 WAR                  -                             finagle                   Unhandled exception in connection with /127.0.0.1:60633 , shutting down connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-05-05 11:16:42,894 INF                  -                             ApiServerMain$            Process started
+2017-05-05 11:16:47,309 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-05 11:17:05,736 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-05 11:17:06,454 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-05 11:17:06,563 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-05 11:17:10,666 INF                  -                             ApiServerMain$            Warming up.
+2017-05-05 11:17:10,775 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-05 11:17:10,775 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-05 11:17:10,790 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-05 11:17:11,196 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-05 11:17:11,196 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-05 11:17:11,196 INF                  -                             ApiServerMain$            api-service started.
+2017-05-05 11:17:11,196 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-05-05 11:17:18,668 INF 5ca8ff7ae8664bf7 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:17:18 +0000] "GET /api/auth/info?_=1493954218435 HTTP/1.1" 200 2426 3407 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:17:18,856 INF 674b1fc2b6d85000 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:17:18 +0000] "GET /api/reader/levels?_=1493954218439 HTTP/1.1" 200 1161 1949 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:17:18,871 INF bf88f7a6f5ac8f23 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:17:18 +0000] "GET /api/reader/groups?_=1493954218438 HTTP/1.1" 200 1368 4489 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:17:21,944 INF cfa9adbdcea07ea8 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:17:21 +0000] "GET /api/book/languages?_=1493954218446 HTTP/1.1" 200 674 105 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:17:22,210 INF 8514d5abf0b0f835 -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:17:22 +0000] "GET /api/book/bookstacks?offset=0&limit=-1&nested=true&_=1493954218447 HTTP/1.1" 200 972 255 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+2017-05-05 11:17:33,239 INF 1cfdf7ef5117161a -                             AccessLoggingFilter       127.0.0.1 - - [05/五月/2017:03:17:33 +0000] "GET /api/book/reference?keyword=&author=&title=%E6%98%8E%E4%BA%BA%E6%97%A5%E8%AE%B0&isbn=&publisher=&clc=&publish_year&offset=&limit=15&_=1493954218448 HTTP/1.1" 200 2022 333 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

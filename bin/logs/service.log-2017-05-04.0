@@ -1,0 +1,819 @@
+2017-05-04 18:51:40,824 INF                  -                             ApiServerMain$            Process started
+2017-05-04 18:51:48,561 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-04 18:52:10,452 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-04 18:52:12,698 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-04 18:52:12,714 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-04 18:52:18,938 INF                  -                             ApiServerMain$            Warming up.
+2017-05-04 18:52:19,048 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-04 18:52:19,079 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-04 18:52:19,079 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-04 18:52:19,079 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-04 18:52:19,079 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-04 18:52:19,079 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 18:52:19,094 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 18:52:19,219 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-04 18:52:19,219 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-04 18:52:19,219 INF                  -                             ApiServerMain$            api-service started.
+2017-05-04 18:52:19,219 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-05-04 18:53:10,044 INF 33abed069545ef85 -                             AccessLoggingFilter       127.0.0.1 - - [04/����/2017:10:53:10 +0000] "POST /api/auth/token HTTP/1.1" 200 216 7216 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 18:53:10,902 INF 9da68cd2cdb7370e -                             AccessLoggingFilter       127.0.0.1 - - [04/����/2017:10:53:10 +0000] "GET /api/auth/info?_=1493895172930 HTTP/1.1" 200 2426 334 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 18:53:17,236 INF 9226b48e0cfe63f5 -                             AccessLoggingFilter       127.0.0.1 - - [04/����/2017:10:53:17 +0000] "GET /api/data/ranking_book?start_time=1493683200000&end_time=1493856000000&_=1493895172935 HTTP/1.1" 200 773 981 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 20:37:56,687 INF                  -                             ApiServerMain$            Process started
+2017-05-04 20:38:01,679 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-04 20:38:13,470 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-04 20:38:13,501 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-04 20:38:13,501 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-04 20:38:14,998 INF                  -                             ApiServerMain$            Warming up.
+2017-05-04 20:38:15,123 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:38:15,123 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 20:38:15,139 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 20:38:15,295 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-04 20:38:15,295 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-04 20:38:15,295 INF                  -                             ApiServerMain$            api-service started.
+2017-05-04 20:38:15,295 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-05-04 20:38:20,898 INF                  -                             ApiServerMain$            Process started
+2017-05-04 20:38:32,227 INF                  -                             ApiServerMain$            Process started
+2017-05-04 20:39:42,743 INF                  -                             ApiServerMain$            Process started
+2017-05-04 20:39:47,205 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-04 20:40:15,363 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-04 20:40:15,378 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-04 20:40:15,378 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-04 20:40:16,720 INF                  -                             ApiServerMain$            Warming up.
+2017-05-04 20:40:16,829 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 20:40:16,845 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 20:40:16,969 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-04 20:40:16,969 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-04 20:40:16,969 INF                  -                             ApiServerMain$            api-service started.
+2017-05-04 20:40:16,969 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-05-04 20:41:20,748 INF 64af8329c7332754 -                             AccessLoggingFilter       127.0.0.1 - - [04/五月/2017:12:41:20 +0000] "GET /api/auth/info?_=1493901660433 HTTP/1.1" 200 2426 1377 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 20:41:21,575 ERR 4782583c5cec3560 -                             FinatraDefaultExceptionMapper Unhandled Exception
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{zst6qgOfTN-N9CQexFv0Ug}{192.168.0.187}{192.168.0.187:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:314) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:228) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.support.TransportProxyClient.execute(TransportProxyClient.java:63) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:326) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:403) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:530) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$$anonfun$apply$1.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$$anonfun$apply$1.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.Executable$class.injectFutureAndMap(Executable.scala:21) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.injectFutureAndMap(SearchDsl.scala:34) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.apply(SearchDsl.scala:34) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.ElasticClient$class.execute(ElasticClient.scala:21) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.ElasticClient$$anon$1.execute(ElasticClient.scala:41) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.shrfid.api.persistence.elastic4s.BaseDalImpl.findAll(BaseDal.scala:187) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.persistence.elastic4s.BaseDalImpl.findAllDocs(BaseDal.scala:157) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.ElasticServiceImpl.findReaderGroups(ElasticServiceImpl.scala:458) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.ReaderService$$anonfun$findGroups$1.apply(ReaderService.scala:311) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.ReaderService$$anonfun$findGroups$1.apply(ReaderService.scala:311) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.TokenServiceImpl$$anonfun$checkPermissionWithCallBack$1$$anonfun$apply$2.apply(TokenServiceImpl.scala:72) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.TokenServiceImpl$$anonfun$checkPermissionWithCallBack$1$$anonfun$apply$2.apply(TokenServiceImpl.scala:70) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1092) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1091) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.ConstFuture$$anon$6.run(Future.scala:1481) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.run(Scheduler.scala:200) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.submit(Scheduler.scala:158) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler.submit(Scheduler.scala:272) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.Scheduler$.submit(Scheduler.scala:108) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.runq(Promise.scala:405) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.updateIfEmpty(Promise.scala:796) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.update(Promise.scala:770) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.setValue(Promise.scala:746) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.AsyncQueue.offer(AsyncQueue.scala:120) [util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.finagle.netty3.transport.ChannelTransport.handleUpstream(ChannelTransport.scala:55) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:310) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) [netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelStatsHandler.messageReceived(ChannelStatsHandler.scala:68) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) [netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelRequestStatsHandler.messageReceived(ChannelRequestStatsHandler.scala:32) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-05-04 20:41:21,575 WAR 4782583c5cec3560 -                             ResponseBuilder           Request Failure: Internal/Unhandled/org.elasticsearch.client.transport.NoNodeAvailableException 
+2017-05-04 20:41:21,840 INF 4782583c5cec3560 -                             AccessLoggingFilter       127.0.0.1 - - [04/五月/2017:12:41:21 +0000] "GET /api/reader/groups?_=1493901660436 HTTP/1.1" 500 36 705 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 20:41:21,887 ERR 51a7f7398e359374 -                             FinatraDefaultExceptionMapper Unhandled Exception
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{zst6qgOfTN-N9CQexFv0Ug}{192.168.0.187}{192.168.0.187:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:314) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:228) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.support.TransportProxyClient.execute(TransportProxyClient.java:63) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:326) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:403) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:530) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$$anonfun$apply$1.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$$anonfun$apply$1.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.Executable$class.injectFutureAndMap(Executable.scala:21) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.injectFutureAndMap(SearchDsl.scala:34) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.apply(SearchDsl.scala:34) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.ElasticClient$class.execute(ElasticClient.scala:21) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.ElasticClient$$anon$1.execute(ElasticClient.scala:41) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.shrfid.api.persistence.elastic4s.BaseDalImpl.findAll(BaseDal.scala:187) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.persistence.elastic4s.BaseDalImpl.findAllDocs(BaseDal.scala:157) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.ElasticServiceImpl.findReaderLevels(ElasticServiceImpl.scala:399) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.ReaderService$$anonfun$findLevels$1.apply(ReaderService.scala:286) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.ReaderService$$anonfun$findLevels$1.apply(ReaderService.scala:286) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.TokenServiceImpl$$anonfun$checkPermissionWithCallBack$1$$anonfun$apply$2.apply(TokenServiceImpl.scala:72) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.TokenServiceImpl$$anonfun$checkPermissionWithCallBack$1$$anonfun$apply$2.apply(TokenServiceImpl.scala:70) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1092) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1091) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.ConstFuture$$anon$6.run(Future.scala:1481) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.run(Scheduler.scala:200) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.submit(Scheduler.scala:158) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler.submit(Scheduler.scala:272) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.Scheduler$.submit(Scheduler.scala:108) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.runq(Promise.scala:405) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.updateIfEmpty(Promise.scala:796) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.update(Promise.scala:770) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.setValue(Promise.scala:746) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.AsyncQueue.offer(AsyncQueue.scala:120) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.finagle.netty3.transport.ChannelTransport.handleUpstream(ChannelTransport.scala:55) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:310) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) ~[netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelStatsHandler.messageReceived(ChannelStatsHandler.scala:68) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) ~[netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelRequestStatsHandler.messageReceived(ChannelRequestStatsHandler.scala:32) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+2017-05-04 20:41:21,887 WAR 51a7f7398e359374 -                             ResponseBuilder           Request Failure: Internal/Unhandled/org.elasticsearch.client.transport.NoNodeAvailableException 
+2017-05-04 20:41:21,887 INF 51a7f7398e359374 -                             AccessLoggingFilter       127.0.0.1 - - [04/五月/2017:12:41:21 +0000] "GET /api/reader/levels?_=1493901660437 HTTP/1.1" 500 36 470 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 20:41:30,639 ERR b3e4d134c69f72ea -                             FinatraDefaultExceptionMapper Unhandled Exception
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{zst6qgOfTN-N9CQexFv0Ug}{192.168.0.187}{192.168.0.187:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:314) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:228) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.support.TransportProxyClient.execute(TransportProxyClient.java:63) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:326) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:403) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:530) ~[elasticsearch-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$$anonfun$apply$1.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$$anonfun$apply$1.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.Executable$class.injectFutureAndMap(Executable.scala:21) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.injectFutureAndMap(SearchDsl.scala:34) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.apply(SearchDsl.scala:37) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.searches.SearchDsl$SearchDefinitionExecutable$.apply(SearchDsl.scala:34) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.ElasticClient$class.execute(ElasticClient.scala:21) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.sksamuel.elastic4s.ElasticClient$$anon$1.execute(ElasticClient.scala:41) ~[elastic4s-core_2.11-5.0.1.jar:5.0.1]
+	at com.shrfid.api.persistence.elastic4s.BorrowHistoryRepo$$anon$1.getBookBorrowRanking(BorrowHistoryRepo.scala:154) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at com.shrfid.api.services.impl.ElasticServiceImpl.findBookBorrowRanking(ElasticServiceImpl.scala:1496) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.BookService$$anonfun$findBookBorrowRanking$1.apply(BookService.scala:97) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.BookService$$anonfun$findBookBorrowRanking$1.apply(BookService.scala:97) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.TokenServiceImpl$$anonfun$checkPermissionWithCallBack$1$$anonfun$apply$2.apply(TokenServiceImpl.scala:72) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.shrfid.api.services.impl.TokenServiceImpl$$anonfun$checkPermissionWithCallBack$1$$anonfun$apply$2.apply(TokenServiceImpl.scala:70) ~[shrfid-api_2.11-0.1-SNAPSHOT.jar:0.1-SNAPSHOT]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1092) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1091) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.ConstFuture$$anon$6.run(Future.scala:1481) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.run(Scheduler.scala:200) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.submit(Scheduler.scala:158) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.LocalScheduler.submit(Scheduler.scala:272) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.Scheduler$.submit(Scheduler.scala:108) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.runq(Promise.scala:405) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.updateIfEmpty(Promise.scala:796) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.update(Promise.scala:770) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.util.Promise.setValue(Promise.scala:746) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.concurrent.AsyncQueue.offer(AsyncQueue.scala:120) ~[util-core_2.11-6.37.0.jar:6.37.0]
+	at com.twitter.finagle.netty3.transport.ChannelTransport.handleUpstream(ChannelTransport.scala:55) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) ~[netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelStatsHandler.messageReceived(ChannelStatsHandler.scala:68) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) ~[netty-3.10.6.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelRequestStatsHandler.messageReceived(ChannelRequestStatsHandler.scala:32) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) ~[finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+2017-05-04 20:41:30,639 WAR b3e4d134c69f72ea -                             ResponseBuilder           Request Failure: Internal/Unhandled/org.elasticsearch.client.transport.NoNodeAvailableException 
+2017-05-04 20:41:30,654 INF b3e4d134c69f72ea -                             AccessLoggingFilter       127.0.0.1 - - [04/五月/2017:12:41:30 +0000] "GET /api/data/ranking_book?start_time=1493769600000&end_time=1493856000000&_=1493901660442 HTTP/1.1" 500 36 188 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+2017-05-04 20:58:40,337 WAR                  -                             finagle                   Unhandled exception in connection with /127.0.0.1:62346 , shutting down connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-05-04 20:58:40,353 WAR                  -                             finagle                   Unhandled exception in connection with /127.0.0.1:62353 , shutting down connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-05-04 21:00:59,726 INF                  -                             ApiServerMain$            Process started
+2017-05-04 21:01:11,598 INF                  -                             HikariDataSource          slick.db - Started.
+2017-05-04 21:01:26,106 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-05-04 21:01:26,106 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-05-04 21:01:26,106 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-05-04 21:01:30,521 INF                  -                             ApiServerMain$            Warming up.
+2017-05-04 21:01:30,755 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-05-04 21:01:30,770 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-05-04 21:01:30,786 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-05-04 21:01:30,786 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-05-04 21:01:30,786 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-05-04 21:01:30,786 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 21:01:30,786 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-05-04 21:01:31,129 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-05-04 21:01:31,145 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-05-04 21:01:31,145 INF                  -                             ApiServerMain$            api-service started.
+2017-05-04 21:01:31,145 INF                  -                             ApiServerMain$            Startup complete, server ready.

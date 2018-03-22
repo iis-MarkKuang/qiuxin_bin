@@ -1,0 +1,302 @@
+2017-09-14 13:39:21,392 INF                  -                             ApiServerMain$            Process started
+2017-09-14 13:39:27,508 INF                  -                             HikariDataSource          slick.db - Started.
+2017-09-14 13:39:38,389 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-09-14 13:39:38,413 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-09-14 13:39:38,416 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-09-14 13:39:40,057 INF                  -                             ApiServerMain$            Warming up.
+2017-09-14 13:39:40,303 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-09-14 13:39:40,318 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-09-14 13:39:40,318 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-09-14 13:39:40,318 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:39:40,319 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:39:40,319 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-09-14 13:39:40,319 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-09-14 13:39:40,319 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-09-14 13:39:40,319 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-09-14 13:39:40,320 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:39:40,320 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:39:40,320 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-09-14 13:39:40,320 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-09-14 13:39:40,320 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-09-14 13:39:40,321 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-09-14 13:39:40,321 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-09-14 13:39:40,321 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-09-14 13:39:40,322 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-09-14 13:39:40,322 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-09-14 13:39:40,323 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-09-14 13:39:40,323 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-09-14 13:39:40,324 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-09-14 13:39:40,324 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-09-14 13:39:40,324 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-09-14 13:39:40,325 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-09-14 13:39:40,325 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-09-14 13:39:40,325 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-09-14 13:39:40,326 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-09-14 13:39:40,326 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-09-14 13:39:40,327 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-09-14 13:39:40,702 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-09-14 13:39:40,706 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-09-14 13:39:40,710 INF                  -                             ApiServerMain$            api-service started.
+2017-09-14 13:39:40,711 INF                  -                             ApiServerMain$            Startup complete, server ready.
+2017-09-14 13:43:12,492 INF db490ce4b54a3d62 -                             AccessLoggingFilter       127.0.0.1 - - [14/九月/2017:05:43:12 +0000] "GET /api/book/items HTTP/1.1" 401 40 1608 "PostmanRuntime/6.3.2"
+2017-09-14 13:43:47,250 INF 2189605fc5c9d361 -                             AccessLoggingFilter       127.0.0.1 - - [14/九月/2017:05:43:47 +0000] "GET /api/book/items HTTP/1.1" 200 29041 2175 "PostmanRuntime/6.3.2"
+2017-09-14 13:43:52,801 WAR                  -                             finagle                   Unhandled exception in connection with /127.0.0.1:37696 , shutting down connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source) ~[na:1.8.0_121]
+	at sun.nio.ch.IOUtil.read(Unknown Source) ~[na:1.8.0_121]
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source) ~[na:1.8.0_121]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.6.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.6.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_121]
+	at com.twitter.finagle.util.ProxyThreadFactory$$anonfun$newProxiedRunnable$1$$anon$1.run(ProxyThreadFactory.scala:19) [finagle-core_2.11-6.38.0.jar:6.38.0]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_121]
+2017-09-14 13:53:57,531 INF                  -                             ApiServerMain$            Process started
+2017-09-14 13:54:01,575 INF                  -                             HikariDataSource          slick.db - Started.
+2017-09-14 13:54:06,402 INF                  -                             ApiServerMain$            Resolving Finagle clients before warmup
+2017-09-14 13:54:06,418 INF                  -                             ApiServerMain$            Done resolving clients: [192.168.0.197:6379, api.douban.com:443].
+2017-09-14 13:54:06,425 INF                  -                             FinagleBuildRevision$     Resolved Finagle build revision: (rev=56e7cf55b5174fbb3e481e73984ea62a3a3c63da)
+2017-09-14 13:54:08,291 INF                  -                             ApiServerMain$            Warming up.
+2017-09-14 13:54:08,557 INF                  -                             HttpRouter                Adding routes
+GET     /api/docs/:file
+GET     /api/create_table
+POST    /api/auth/token
+GET     /api/auth/permissions
+GET     /api/auth/groups
+PUT     /api/auth/groups
+PATCH   /api/auth/groups/:id
+DELETE  /api/auth/groups/:id
+GET     /api/auth/info
+GET     /api/auth/users
+GET     /api/auth/users/:id
+PUT     /api/auth/users
+PATCH   /api/auth/users/:id
+PATCH   /api/auth/users/:id/permissions
+PATCH   /api/auth/users/:id/password/force
+PATCH   /api/auth/password
+POST    /api/book/bookstacks
+GET     /api/book/bookstacks
+GET     /api/book/bookstacks/:id
+PATCH   /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks/:id
+DELETE  /api/book/bookstacks
+POST    /api/book/branches
+GET     /api/book/branches
+GET     /api/book/branches/:id
+PATCH   /api/book/branches/:id
+DELETE  /api/book/branches/:id
+DELETE  /api/book/branches
+GET     /api/book/elastic/:filename
+GET     /api/book/reference/:id
+GET     /api/book/reference
+GET     /api/book/writing_method
+GET     /api/book/languages
+POST    /api/book/pregen
+POST    /api/book/items
+GET     /api/book/items
+GET     /api/book/items/:id
+POST    /api/book/return
+POST    /api/book/transfer
+GET     /api/book/reservation/:id
+GET     /api/book/reservation
+PATCH   /api/book/checkbook
+PATCH   /api/book/initbookshelf
+GET     /api/book/get_book_business_shelf_state
+GET     /api/book/items/search
+PATCH   /api/book/shelf_status
+GET     /api/check/progress
+GET     /api/book/shelf_status
+POST    /api/reader/levels
+POST    /api/reader/levels_new
+GET     /api/reader/levels
+GET     /api/reader/levels_new
+GET     /api/reader/levels/:id
+GET     /api/reader/levels_new/:id
+PATCH   /api/reader/levels/:id
+PATCH   /api/reader/levels_new/:id
+DELETE  /api/reader/levels/:id
+DELETE  /api/reader/levels_new/:id
+DELETE  /api/reader/levels
+DELETE  /api/reader/levels_new
+POST    /api/reader/groups
+GET     /api/reader/groups
+GET     /api/reader/groups/:id
+PATCH   /api/reader/groups/:id
+DELETE  /api/reader/groups/:id
+DELETE  /api/reader/groups
+POST    /api/reader/members
+POST    /api/reader/bulk/members
+GET     /api/reader/members/:id
+GET     /api/reader/members/find_by_barcode
+GET     /api/reader/members
+PATCH   /api/reader/bulk/members
+PATCH   /api/reader/members/:id
+POST    /api/reader/members/:id/borrow
+POST    /api/reader/members/:id/borrow_new
+POST    /api/reader/members/:id/renew
+POST    /api/reader/members/:id/renew_new
+POST    /api/reader/members/:id/reservation
+POST    /api/reader/members/:id/reservation_new
+GET     /api/reader/members/:id/holdings
+GET     /api/reader/members/:id/fine
+GET     /api/reader/members/:id/lostfine
+PUT     /api/reader/members/:id/credit/deduct
+POST    /api/vendor/members
+PATCH   /api/vendor/members/:id
+GET     /api/vendor/members
+GET     /api/vendor/members/:id
+DELETE  /api/vendor/members/:id
+POST    /api/vendor/orders
+POST    /api/vendor/bulk/orders
+PATCH   /api/vendor/bulk/orders
+GET     /api/vendor/orders
+GET     /api/vendor/orders/:id
+DELETE  /api/vendor/orders/:id
+DELETE  /api/vendor/orders
+GET     /api/douban/:isbn
+GET     /api/data/ranking_book
+GET     /api/data/flow_category
+GET     /api/data/ranking_reader
+GET     /api/data/flow_book
+GET     /api/data/stock
+2017-09-14 13:54:08,571 INF                  -                             ApiServerMain$             => com.twitter.server.handler.AdminRedirectHandler
+2017-09-14 13:54:08,572 INF                  -                             ApiServerMain$            /admin => com.twitter.server.handler.SummaryHandler
+2017-09-14 13:54:08,572 INF                  -                             ApiServerMain$            /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:54:08,572 INF                  -                             ApiServerMain$            /admin/contention => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:54:08,572 INF                  -                             ApiServerMain$            /admin/lint => com.twitter.server.handler.LintHandler
+2017-09-14 13:54:08,573 INF                  -                             ApiServerMain$            /admin/lint.json => com.twitter.server.handler.LintHandler
+2017-09-14 13:54:08,573 INF                  -                             ApiServerMain$            /admin/threads => com.twitter.server.handler.ThreadsHandler
+2017-09-14 13:54:08,573 INF                  -                             ApiServerMain$            /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2017-09-14 13:54:08,573 INF                  -                             ApiServerMain$            /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:54:08,573 INF                  -                             ApiServerMain$            /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2017-09-14 13:54:08,574 INF                  -                             ApiServerMain$            /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2017-09-14 13:54:08,574 INF                  -                             ApiServerMain$            /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2017-09-14 13:54:08,574 INF                  -                             ApiServerMain$            /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2017-09-14 13:54:08,574 INF                  -                             ApiServerMain$            /admin/ping => com.twitter.server.handler.ReplyHandler
+2017-09-14 13:54:08,574 INF                  -                             ApiServerMain$            /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2017-09-14 13:54:08,575 INF                  -                             ApiServerMain$            /admin/tracing => com.twitter.server.handler.TracingHandler
+2017-09-14 13:54:08,575 INF                  -                             ApiServerMain$            /admin/events => com.twitter.server.handler.EventsHandler
+2017-09-14 13:54:08,575 INF                  -                             ApiServerMain$            /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2017-09-14 13:54:08,575 INF                  -                             ApiServerMain$            /admin/logging => com.twitter.server.handler.LoggingHandler
+2017-09-14 13:54:08,576 INF                  -                             ApiServerMain$            /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2017-09-14 13:54:08,576 INF                  -                             ApiServerMain$            /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2017-09-14 13:54:08,576 INF                  -                             ApiServerMain$            /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2017-09-14 13:54:08,576 INF                  -                             ApiServerMain$            /admin/files/ => com.twitter.server.handler.ResourceHandler
+2017-09-14 13:54:08,577 INF                  -                             ApiServerMain$            /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2017-09-14 13:54:08,577 INF                  -                             ApiServerMain$            /admin/toggles => com.twitter.server.handler.ToggleHandler
+2017-09-14 13:54:08,577 INF                  -                             ApiServerMain$            /admin/toggles/ => com.twitter.server.handler.ToggleHandler
+2017-09-14 13:54:08,577 INF                  -                             ApiServerMain$            /favicon.ico => com.twitter.server.handler.ResourceHandler
+2017-09-14 13:54:08,578 INF                  -                             ApiServerMain$            /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2017-09-14 13:54:08,578 INF                  -                             ApiServerMain$            /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2017-09-14 13:54:08,832 INF                  -                             ApiServerMain$            http server started on port: 8010
+2017-09-14 13:54:08,834 INF                  -                             ApiServerMain$            Enabling health endpoint on port 9992
+2017-09-14 13:54:08,836 INF                  -                             ApiServerMain$            api-service started.
+2017-09-14 13:54:08,837 INF                  -                             ApiServerMain$            Startup complete, server ready.
